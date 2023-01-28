@@ -1,0 +1,52 @@
+/* delaem dla togo cztob wpisat peremennyje CSS */
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0, 8);
+    --title-text-color: #000000;
+    --accent-color: orange;
+    --primary-bg-color: #ffffff;
+}
+/* wstawlajem cweta zapisannyje w ROOT */
+body {
+    color: rgba(0, 0, 0, 0, 8);
+}
+.logo {
+    var(--primary-text-color);
+}
+.list {
+list-style: none;   
+}
+/* site nav */ 
+/* wstawlaem cweta urze kotoryje propisali w ROOTe */
+.site-nav a{
+var(--accent-color)
+}
+.site-nav  .link:hover, 
+.site-nav .link:focus {
+    color: #000000;
+}
+.section-title {
+    color: tomato;
+}
+.feature-list .title {
+    color: teal;
+}
+/* bazowyj stil knopok vseh */
+.button {
+    color: var(--primary-bg-color);
+    font-size: 24px;
+    padding: 12px 24px;
+    display: inline-block;
+    border: 1px solid black;
+}
+/* knopka s osobym stilem */
+.button.primary {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+}
+.button.secondary {
+    background-color: var(--primary-text-color);
+    color: var(--accent-color); 
+}
+.button {
+    font-family: ;
+}
