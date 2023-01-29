@@ -1,15 +1,17 @@
 /* delaem dla togo cztob wpisat peremennyje CSS */
 :root {
     --text-color: #434455;
-    --title-text-color: #2E2F42;;
+    --title-text-color: #2E2F42;
     --btn-color: #4D5AE5;
     --primary-bg-color:  #E5E5E5;
+    --bg-color-image: #FFFFFF;
 }
 /* ============body */
 body {
 color: var(--title-text-color);
-font-family: 'Roboto'; sans-serif;
+font-family: 'Roboto', sans-serif;
 letter-spacing: 0.02em;
+background: var(--primary-bg-color);
 }
 /* ===============spiski */
 .list {
@@ -69,7 +71,7 @@ order: 2;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
-line-height: 1.5
+line-height: 1.5;
 text-align: center;
 letter-spacing: 0.04em;
 color: var(--btn-color);
@@ -77,8 +79,21 @@ cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
-background: #404BBF;
+background: var(--btn-color);
 color: #FFFFFF;
+}
+/* ======================ZAGOLOWOKi */
+.hero-title {
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+color: #FFFFFF;
+}
+.gallery-team {
+font-size: 36px;
+line-height: 1.1;
+text-transform: capitalize;
 }
 /* ================KARTINKI */
 .hero-title-description {
