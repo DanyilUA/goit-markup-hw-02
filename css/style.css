@@ -2,9 +2,15 @@
 :root {
     --text-color: #434455;
     --title-text-color: #2E2F42;
+    --text-footer-color: #E7E9FC;
     --btn-color: #4D5AE5;
-    --primary-bg-color:  #E5E5E5;
+    --btn-text-color: #4D5AE5;
+    --btn-text-secondary-color: #FFFFFF;
+    --primary-bg-color: #FFFFFF;
     --bg-color-image: #FFFFFF;
+    --btn-bg-color: #F4F4FD;
+    --bg-color-section: #F4F4FD; 
+    --bg-zagolowok: #2E2F42;
 }
 /* ============body */
 body {
@@ -28,11 +34,12 @@ font-size: 18px;
 line-height: 1.33;
 align-items: center;
 letter-spacing: 0.03em;
-color: var(--title-text-color);
 text-decoration: none;
+color: var(--btn-color);
+
 }
-.header-logo-web {
-color: #4D5AE5;
+.header-logo-studio {
+color:var(--title-text-color);
 }
 /* ==================navigation */
 .header-link {
@@ -43,7 +50,11 @@ color: var(--title-text-color);
 }
 .header-link:focus,
 .header-link:hover {
-    color: #4D5AE5;
+color: var(--btn-color);
+}
+.header-nav .current {
+    background-color: var(--btn-color);
+    color: var(--btn-text-secondary-color);
 }
 /* =====================adres */
 .address-link {
@@ -56,46 +67,60 @@ color: var(--text-color);
 .address-link:focus {
 color: var(--btn-color); 
 }
-/* =================knopki */
-.hero-btn {
-display: flex;
-justify-content: center;
-padding: 12px 24px;
-width: 78px;
-height: 48px;
-background: #F4F4FD;
-border: 1px solid #E7E9FC;
-order: 2;
+/* ==============ZAGOLOWOK  */
+.zagolowok {
+    background-color: var(--bg-zagolowok);
 }
+/* =================knopki */
 .hero-btn {
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-text-align: center;
 letter-spacing: 0.04em;
 color: var(--btn-color);
+background: var(--btn-bg-color);
 cursor: pointer;
 }
-.btn:hover,
-.btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
 background: var(--btn-color);
-color: #FFFFFF;
+color: var(--btn-text-secondary-color);
 }
 /* ======================ZAGOLOWOKi */
-.hero-title {
-font-weight: 700;
+.main-title {
+font-weight: 700;   
 font-size: 56px;
 line-height: 1.07;
 text-align: center;
-color: #FFFFFF;
+color: var(--bg-color-image);
 }
 .gallery-team {
+font-weight: 700;   
 font-size: 36px;
 line-height: 1.1;
 text-transform: capitalize;
 }
+.gallery-team-member {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+color: var(--title-text-color);
+}
 /* ================KARTINKI */
+.hero-title {
+position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}
+
 .hero-title-description {
 font-weight: 500;
 font-size: 20px;
@@ -107,9 +132,12 @@ font-size: 16px;
 line-height: 1.5;
 color: var(--text-color);
 }
+.gallery {
+    background-color:var(--bg-color-section);
+}
 /* ===================foooooooter */
 .footer-text {
 font-size: 16px;
 line-height: 1.5;
-color: #E7E9FC;
+color:var(--text-footer-color);
 }
